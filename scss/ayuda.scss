@@ -1,0 +1,105 @@
+@import "footer";
+$font-family:'Viga', sans-serif;
+
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	background-image: url(../imagenes/posiblefondo.jpg);
+	background-size: cover;
+}
+div {
+	h3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+h3 {
+	font-family:$font-family;
+	color: black;
+	font-size: 30px;
+}
+h1 {
+	font-family:$font-family;
+	color: black;
+	font-size: 30px;
+}
+h2 {
+	font-family:$font-family;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-family:$font-family;
+}
+header {
+	display: flex;
+	min-height: 70px;
+	background-color: rgb(245, 245, 245);
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.logo {
+	display: flex;
+	img {
+		height: 50px;
+	}
+}
+nav {
+	a {
+		font-weight: 600;
+		padding: 10px;
+		font-family:$font-family;
+		&:hover {
+			color: rgb(21, 112, 187);
+		}
+	}
+}
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.form-soporte {
+	width: 400px;
+	background-color: black;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family:$font-family;
+	color: white;
+	h3 {
+		color: white;
+		font-size: 22px;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+	}
+}
+.control {
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	margin-bottom: 16px;
+}
+.boton {
+	width: 100%;
+	border: none;
+	padding: 12px;
+	color: black;
+	margin: 16px 0;
+	font-size: 16px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,165 @@
+@import "body";
+@import "footer";
+$font-family:'Viga', sans-serif;
+
+
+div {
+	h3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+h3 {
+	font-family:$font-family;
+	color: black;
+	font-size: 30px;
+}
+h1 {
+	font-family: 'Viga', sans-serif;
+	color: black;
+	font-size: 30px;
+}
+h2 {
+	font-family: 'Viga', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Viga', sans-serif;
+}
+header {
+	display: flex;
+	min-height: 70px;
+	background-color: rgb(245, 245, 245);
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.logo {
+	display: flex;
+	img {
+		height: 50px;
+	}
+}
+nav {
+	a {
+		font-weight: 600;
+		padding: 10px;
+		font-family: 'Viga', sans-serif;
+		&:hover {
+			color: rgb(21, 112, 187);
+		}
+	}
+}
+.elige {
+	display: flex;
+	justify-content: center;
+}
+.preferencia {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3 ,1fr);
+	grid-template-rows: repeat(3 ,150px);
+	margin: auto;
+	max-width: 90%;
+	padding: 3rem 0;
+	font-family: 'Viga', sans-serif;
+}
+.calzado {
+	background-image: url(../imagenes/calzadoN.jpeg);
+	background-position: center;
+	background-size: cover;
+	grid-row: 1/4;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 10%;
+	padding-top: 15px;
+	color: white;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.indumentaria {
+	background-image: url(../imagenes/indumentariaN.jpeg);
+	background-size: cover;
+	grid-row: 1/4;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 10%;
+	padding-top: 20px;
+	color: white;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.accesorios {
+	background-image: url(../imagenes/accesoriosN.jpeg);
+	background-size: cover;
+	grid-row: 1/4;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 10%;
+	padding-top: 15px;
+	color: white;
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.preferencia {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.calzado {
+			display: flex;
+			flex-direction: column;
+			background-image: none;
+			color: white;
+			background-color: black;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			border-radius: none;
+			margin: 0;
+		}
+		.indumentaria {
+			display: flex;
+			flex-direction: column;
+			background-image: none;
+			color: white;
+			background-color: black;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			border-radius: none;
+			margin: 0;
+		}
+		.accesorios {
+			display: flex;
+			flex-direction: column;
+			background-image: none;
+			color: white;
+			background-color: black;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			border-radius: none;
+			margin: 0;
+		}
+	}
+}

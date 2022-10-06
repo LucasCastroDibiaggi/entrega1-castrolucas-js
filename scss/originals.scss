@@ -1,0 +1,220 @@
+@import "body";
+@import "footer";
+$font-family: 'Viga', sans-serif;
+
+
+
+div {
+	h3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+h3 {
+	font-family:$font-family;
+	color: black;
+	font-size: 30px;
+}
+h1 {
+	font-family:$font-family;
+	color: black;
+	font-size: 30px;
+}
+h2 {
+	font-family:$font-family;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-family:$font-family;
+}
+header {
+	display: flex;
+	min-height: 70px;
+	background-color: rgb(245, 245, 245);
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.logo {
+	display: flex;
+	img {
+		height: 50px;
+	}
+}
+nav {
+	a {
+		font-weight: 600;
+		padding: 10px;
+		font-family:$font-family;
+		&:hover {
+			color: rgb(21, 112, 187);
+		}
+	}
+}
+.elige {
+	display: flex;
+	justify-content: center;
+}
+.contenedor {
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 150px);
+	margin: auto;
+	max-width: 90%;
+	padding: 3rem 0;
+	.f1 {
+		background-image: url(../imagenes/original1.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 1/4;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+	.f2 {
+		background-image: url(../imagenes/original2.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 1/4;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+	.f3 {
+		background-image: url(../imagenes/original3.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 1/4;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+	.f4 {
+		background-image: url(../imagenes/original4.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 4/7;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+	.f5 {
+		background-image: url(../imagenes/original5.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 4/7;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+	.f6 {
+		background-image: url(../imagenes/orginal6.webp);
+		background-position: center;
+		background-size: cover;
+		grid-row: 4/7;
+		border-radius: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contenedor {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.f1 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/original1.webp);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.f2 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/original2.webp);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.f3 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/original3.webp);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.f4 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/original4.webp);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.f5 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/original5.webp);
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.f6 {
+			display: flex;
+			width: 400px;
+			background-position: center;
+			background-image: url(../imagenes/orginal6.webp);
+			background-color: aqua;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+}

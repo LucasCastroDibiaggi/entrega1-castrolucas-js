@@ -1,0 +1,29 @@
+.pie-pagina {
+	background-color: rgb(245, 245, 245);
+	width: 100%;
+	.grupo-1 {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-gap: 50px;
+		padding: 45px 0px;
+		.red-social {
+			a {
+				display: inline-block;
+				text-decoration: none;
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+			}
+		}
+	}
+	.grupo-2 {
+		padding: 15px 10px;
+		text-align: center;
+	}
+}
+.box {
+	grid-column: 2/3;
+}
